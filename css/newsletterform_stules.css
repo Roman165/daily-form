@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -316,36 +317,82 @@ html {
   height: 100%; }
 
 body {
-  font-family: Arial, sans-serif;
-  font-size: 3rem;
+  font-family: Lato, sans-serif;
+  font-size: 1.3rem;
   line-height: 1.6;
   color: #fff;
   min-height: 100%;
-  position: relative; }
+  position: relative;
+  background: #b9c5db; }
 
-.conteiner {
-  width: 500px;
-  min-width: 300px;
+.account {
   position: absolute;
+  font-weight: 400;
+  width: 100%;
+  max-width: 800px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: #000;
-  -webkit-box-shadow: 0 0 40px rgba(83, 143, 255, 0.5);
-  box-shadow: 0 0 40px rgba(83, 143, 255, 0.5); }
-
-.link {
-  background: #23ae92;
-  display: block;
-  text-decoration: none;
-  width: 100%;
-  color: #fff;
-  text-align: center;
-  margin: 10px 0;
-  padding: 50px; }
-  .link:active, .link:hover, .link:focus {
-    outline: 1px solid blue;
-    color: #538fff; }
+  background: #353945;
+  border-radius: 15px;
+  min-height: 470px;
+  margin: 0;
+  padding: 0px;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); }
+  .account__title {
+    color: #538fff;
+    font-size: 4.8rem;
+    text-align: center;
+    margin-top: 8rem;
+    font-weight: 700; }
+  .account__subtitle {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 1rem; }
+  .account__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .account__email {
+    margin: 25px 60px 0;
+    border: none;
+    padding: 10px 0; }
+  .account__field {
+    width: 67%;
+    font-size: 2rem;
+    line-height: 2.2;
+    border-radius: 10px;
+    background-color: #f0f0f0; }
+    .account__field:active, .account__field:hover, .account__field:focus {
+      outline: 0;
+      outline-offset: 0; }
+  .account__button {
+    color: #fff;
+    font-size: 1.8rem;
+    background-color: #538fff;
+    width: 30%;
+    font-weight: 700;
+    margin-left: 10px;
+    padding: 1.3rem;
+    border-radius: 10px;
+    text-transform: uppercase; }
+    .account__button:hover, .account__button:focus, .account__button:active {
+      background-color: #fff;
+      outline: 0;
+      color: #538fff; }
+  .account__text {
+    color: #656973;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400i;
+    margin: 2rem; }

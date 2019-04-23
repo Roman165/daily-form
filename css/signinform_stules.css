@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -316,36 +317,92 @@ html {
   height: 100%; }
 
 body {
-  font-family: Arial, sans-serif;
-  font-size: 3rem;
+  font-family: Quicksand, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
   line-height: 1.6;
   color: #fff;
   min-height: 100%;
   position: relative; }
 
-.conteiner {
-  width: 500px;
-  min-width: 300px;
+.account {
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(200, 116, 217, 0.7)), to(rgba(43, 33, 169, 0.9)));
+  background-image: -o-linear-gradient(top right, rgba(200, 116, 217, 0.7), rgba(43, 33, 169, 0.9));
+  background-image: linear-gradient(to bottom left, rgba(200, 116, 217, 0.7), rgba(43, 33, 169, 0.9));
   position: absolute;
+  width: 100%;
+  max-width: 400px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: #000;
-  -webkit-box-shadow: 0 0 40px rgba(83, 143, 255, 0.5);
-  box-shadow: 0 0 40px rgba(83, 143, 255, 0.5); }
-
-.link {
-  background: #23ae92;
-  display: block;
-  text-decoration: none;
-  width: 100%;
-  color: #fff;
-  text-align: center;
-  margin: 10px 0;
-  padding: 50px; }
-  .link:active, .link:hover, .link:focus {
-    outline: 1px solid blue;
-    color: #538fff; }
+  padding: 70px; }
+  .account__link-top {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 0 20px  0 0;
+    text-decoration: none; }
+    .account__link-top:active, .account__link-top:hover, .account__link-top:focus {
+      border-bottom: 2px solid #e66a64; }
+  .account__enter {
+    border: none;
+    margin: 5rem 0 0 0;
+    padding: 0; }
+  .account__label {
+    display: block;
+    width: 100%;
+    font-size: 1.6rem; }
+  .account__field {
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 3;
+    margin: 10px 0;
+    background-color: transparent; }
+    .account__field:active, .account__field:hover, .account__field:focus {
+      outline: 0; }
+  .account__box {
+    position: absolute; }
+  .account__checkbox:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    top: 0;
+    right: 0px;
+    position: relative;
+    background-color: #23ae92;
+    display: inline-block;
+    visibility: visible; }
+  .account__checkbox:checked:after {
+    content: '\2713';
+    width: 20px;
+    height: 20px;
+    top: -18px;
+    left: 2px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    visibility: visible; }
+  .account__button {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 1rem;
+    background-color: #23ae92;
+    width: 100%;
+    padding: 1rem;
+    margin: 4rem 0 3rem 0; }
+    .account__button:hover, .account__button:focus, .account__button:active {
+      background-color: #fff;
+      color: #23ae92; }
+  .account__link-bottom {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #333;
+    margin: 0 20px 0 0;
+    text-decoration: none;
+    border-bottom: 1px solid #333; }
+    .account__link-bottom:active, .account__link-bottom:hover, .account__link-bottom:focus {
+      border-bottom: 1px solid #e66a64; }

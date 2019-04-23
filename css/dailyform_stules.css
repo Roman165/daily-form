@@ -317,35 +317,77 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  font-size: 3rem;
+  font-size: 1.3rem;
   line-height: 1.6;
-  color: #fff;
+  color: #9f9fa2;
   min-height: 100%;
-  position: relative; }
+  position: relative;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(255, 81, 47, 0.9)), to(rgba(221, 36, 118, 0.7))), url(../img/1.jpg);
+  background-image: -o-linear-gradient(top right, rgba(255, 81, 47, 0.9), rgba(221, 36, 118, 0.7)), url(../img/1.jpg);
+  background-image: linear-gradient(to bottom left, rgba(255, 81, 47, 0.9), rgba(221, 36, 118, 0.7)), url(../img/1.jpg); }
 
-.conteiner {
-  width: 500px;
-  min-width: 300px;
+.account {
   position: absolute;
+  width: 100%;
+  max-width: 460px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: #000;
-  -webkit-box-shadow: 0 0 40px rgba(83, 143, 255, 0.5);
-  box-shadow: 0 0 40px rgba(83, 143, 255, 0.5); }
-
-.link {
-  background: #23ae92;
-  display: block;
-  text-decoration: none;
-  width: 100%;
-  color: #fff;
-  text-align: center;
-  margin: 10px 0;
-  padding: 50px; }
-  .link:active, .link:hover, .link:focus {
-    outline: 1px solid blue;
-    color: #538fff; }
+  background: #FFF;
+  min-height: 470px;
+  margin: 0;
+  padding: 30px; }
+  .account__head {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #000; }
+    .account__head:before {
+      content: url(../img/signupicon.png);
+      margin-right: 10px; }
+  .account__text {
+    font-size: 1.3rem; }
+  .account__link {
+    color: #ea355a; }
+  .account__enter {
+    border: none;
+    margin: 0;
+    padding: 0; }
+  .account__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .account__field {
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 3;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #f0f0f0; }
+    .account__field:active, .account__field:hover, .account__field:focus {
+      outline: 0;
+      outline-offset: 0; }
+    .account__field--small {
+      width: 48%; }
+  .account__button {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 1rem;
+    background-color: #EA355A;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px; }
+    .account__button:hover, .account__button:focus, .account__button:active {
+      background-color: #a200b8;
+      outline: 0; }
+  .account__warning {
+    margin: 20px 0;
+    font-size: 1.2rem; }

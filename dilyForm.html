@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link rel="stylesheet" href="css/dailyform_stules.css">
+	
+	<meta name="description" content="">
+</head>
+<body>
+	<form action="" class="account" method="POST">
+		<div class="account__head">Create your free account</div>
+		<p class="account__text">
+			Come and join our cool and amazing community, fill in your details
+			to get started. Already have an account? 
+			<a href="#" class="account__link">Log in</a>
+		</p>
+		<fieldset class="account__enter">
+			<div class="account__name">
+				<input type="text" name="firstname" id="firstname" class="account__field account__field--small" required minlenght="16" maxlength="16" pattern="" placeholder="First name">
+				<input type="text" name="lastname" id="lastname" class="account__field account__field--small" required minlenght="16" maxlength="16" pattern="" placeholder="Last name">
+			</div>
+			<input type="email" name="mail" id="mail" class="account__field" required minlenght="20" maxlength="20" pattern="" placeholder="Email address">
+			<input type="password" name="passworld" id="password" class="account__field" required minlenght="16" maxlength="16" pattern="" placeholder="Password">
+			<button class="account__button">Sign up for free</button>
+			<div class="account__warning">By clicking on “Sign up for free”, you agree to the 
+				<a href="#" class="account__link">Terms of Service</a> and 
+				<a href="#" class="account__link">Privacy Policy</a>
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>
