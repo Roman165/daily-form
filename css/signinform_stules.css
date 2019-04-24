@@ -326,9 +326,12 @@ body {
   position: relative; }
 
 .account {
-  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(200, 116, 217, 0.7)), to(rgba(43, 33, 169, 0.9)));
-  background-image: -o-linear-gradient(top right, rgba(200, 116, 217, 0.7), rgba(43, 33, 169, 0.9));
-  background-image: linear-gradient(to bottom left, rgba(200, 116, 217, 0.7), rgba(43, 33, 169, 0.9));
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(200, 116, 217, 0.7)), to(rgba(43, 33, 169, 0.9))), url(../img/VectorSmartObject.png);
+  background-image: -o-linear-gradient(top right, rgba(200, 116, 217, 0.7), rgba(43, 33, 169, 0.9)), url(../img/VectorSmartObject.png);
+  background-image: linear-gradient(to bottom left, rgba(200, 116, 217, 0.7), rgba(43, 33, 169, 0.9)), url(../img/VectorSmartObject.png);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
   position: absolute;
   width: 100%;
   max-width: 400px;
@@ -393,7 +396,7 @@ body {
     background-color: #23ae92;
     width: 100%;
     padding: 1rem;
-    margin: 4rem 0 3rem 0; }
+    margin: 7rem 0 4rem 0; }
     .account__button:hover, .account__button:focus, .account__button:active {
       background-color: #fff;
       color: #23ae92; }
@@ -401,8 +404,10 @@ body {
     font-size: 1.3rem;
     font-weight: 400;
     color: #333;
-    margin: 0 20px 0 0;
+    margin: 0 0px 0 0;
     text-decoration: none;
     border-bottom: 1px solid #333; }
     .account__link-bottom:active, .account__link-bottom:hover, .account__link-bottom:focus {
       border-bottom: 1px solid #e66a64; }
+    .account__link-bottom--right {
+      float: right; }

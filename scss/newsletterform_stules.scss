@@ -17,9 +17,6 @@ body {
 	min-height: 100%;
 	position: relative;
 	background: #b9c5db; 
-	// background-repeat: no-repeat;
-	// background-position: right center;
-	// background-size: auto 100%;
 }
 .account {
 	position: absolute;
@@ -35,6 +32,21 @@ body {
 	margin: 0;
 	padding: 0px;
 	box-shadow: 0 0 40px rgba(0,0,0,0.5);
+	&__icon {
+		position: absolute;
+		top: -45px;
+		left: 44%;
+	}
+	&__close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		&:active, 
+		&:hover, 
+		&:focus {
+			transform: scale(1.1);
+		}
+	}
 	&__title {
 		color:#538fff;
 		font-size: 4.8rem;
@@ -92,52 +104,12 @@ body {
 			color: #538fff
 		}
 	}
-	// &__warning {
-	// 	margin: 5px 0;
-	// 	font-size: 1.2rem;
-	// 	// font-weight: regular;
-	// 	}
+
 	&__text {
 		color: #656973;
 		text-align: center;
 		font-size: 2rem;
 		font-weight: 400i;
-		margin: 2rem;
+		margin: 4rem 0;
 	}
 	}
-
-	
-
-
-
-
-
-
-
-
-
-
-// 	&__head {
-// 		font-size: 2.4rem;
-// 		font-weight: bold;
-// 		color: #000;
-// 		&:before {
-// 			content: url(../img/signupicon.png);
-// 			margin-right: 10px;
-// 		}
-// 	}
-// 	&__text {
-// 		font-size: 1.3rem;
-// 		// font-weight: regular;
-// 	}
-// 	&__link {
-// 		color: #ea355a;
-// 	}
-// 	&__enter {
-		
-// 	}
-// 	&__name {
-// 		display: flex;
-// 		// padding: 10px 0;
-// 	}
-// }
